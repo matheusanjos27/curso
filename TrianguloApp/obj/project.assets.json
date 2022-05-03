@@ -1,0 +1,113 @@
+{
+  "version": 3,
+  "targets": {
+    "net6.0": {
+      "PiramideApp/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/PiramideApp.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PiramideApp.dll": {}
+        }
+      },
+      "VerticeApp/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "PiramideApp": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/VerticeApp.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/VerticeApp.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "PiramideApp/1.0.0": {
+      "type": "project",
+      "path": "../PiramideApp/PiramideApp.csproj",
+      "msbuildProject": "../PiramideApp/PiramideApp.csproj"
+    },
+    "VerticeApp/1.0.0": {
+      "type": "project",
+      "path": "../VerticeApp/VerticeApp.csproj",
+      "msbuildProject": "../VerticeApp/VerticeApp.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net6.0": [
+      "VerticeApp >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\mathe\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Projetos\\Curso\\TrianguloApp\\TrianguloApp.csproj",
+      "projectName": "TrianguloApp",
+      "projectPath": "C:\\Projetos\\Curso\\TrianguloApp\\TrianguloApp.csproj",
+      "packagesPath": "C:\\Users\\mathe\\.nuget\\packages\\",
+      "outputPath": "C:\\Projetos\\Curso\\TrianguloApp\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\mathe\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net6.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "projectReferences": {
+            "C:\\Projetos\\Curso\\VerticeApp\\VerticeApp.csproj": {
+              "projectPath": "C:\\Projetos\\Curso\\VerticeApp\\VerticeApp.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net6.0": {
+        "targetAlias": "net6.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
